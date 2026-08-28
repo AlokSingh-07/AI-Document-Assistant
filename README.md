@@ -90,17 +90,19 @@ AI Document Assistant/
   MISTRAL_API_KEY=your_actual_mistral_api_key_here
 
 #  Start the Backend Server:
-  ython run.py runserver
+  python run.py runserver
 
 
 
 ### 3. Frontend Setup
-
-# Open a new terminal tab and navigate to the frontend directory:
-  cd frontend
+1. Open a new terminal tab and navigate to the frontend directory:
+   ```bash
+   cd frontend
               
- # Install Node modules:
-  pm install
+ 2. Install Node modules:
+ ```bash
+   npm install
               
-# Start the Frontend Development Server:
-  npm run dev
+3. Start the Frontend Development Server:
+   ```bash
+   npm run dev
