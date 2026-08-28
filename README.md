@@ -99,10 +99,10 @@ AI Document Assistant/
    ```bash
    cd frontend
 
-2. Install Node modules:
+### 2. Install Node modules:
    npm install
 
-3. Start the Frontend Development Server:
+### 3. Start the Frontend Development Server:
    npm run dev
               
  
