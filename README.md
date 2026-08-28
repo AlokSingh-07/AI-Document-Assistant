@@ -83,15 +83,14 @@ AI Document Assistant/
       # Activate on macOS/Linux:
         source venv/bin/activate
 
-4. Install required Python packages:
-       pip install -r requirements.txt
+# Install required Python packages:
+  pip install -r requirements.txt
 
-5. Create a .env file in the backend folder and add your key:
-      MISTRAL_API_KEY=your_actual_mistral_api_key_here
+# Create a .env file in the backend folder and add your key:
+  MISTRAL_API_KEY=your_actual_mistral_api_key_here
 
-6. Start the Backend Server:
-      cd backend
-      python run.py runserver
+#  Start the Backend Server:
+  ython run.py runserver
 
 
 
@@ -104,5 +103,4 @@ AI Document Assistant/
   pm install
               
 # Start the Frontend Development Server:
-  cd frontend
   npm run dev
