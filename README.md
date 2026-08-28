@@ -49,16 +49,16 @@ AI Document Assistant/
 
   2. Create and activate a virtual environment:
 
-        # Create virtual environment
+        * **Create virtual environment**
         python -m venv venv
         
-        # Activate on Windows (Command Prompt):
+        * **Activate on Windows (Command Prompt):**
         venv\Scripts\activate
         
-        # Activate on Windows (PowerShell):
+        * **Activate on Windows (PowerShell):**
         .\venv\Scripts\Activate.ps1
         
-        # Activate on macOS/Linux:
+        * **Activate on macOS/Linux:**
         source venv/bin/activate
 
 3. Install required Python packages:
