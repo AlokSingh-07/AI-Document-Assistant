@@ -11,6 +11,18 @@ An interactive, GenAI-powered Retrieval-Augmented Generation (RAG) application t
  **Mistral LLM Integration**: Generates context-aware, accurate answers grounded strictly in your uploaded documents to eliminate hallucinations.
  **Interactive React UI**: Clean frontend interface for file uploads, live querying, and viewing source citations.
 
+---
+
+### Workflow Diagram
+
+```text
+[ Upload PDF ] ➔ [ Text Extraction ] ➔ [ Chunking ] ➔ [ Generate Vector Embeddings ] ➔ [ Store in Vector DB ]
+                                                                                               │
+[ User Query ] ➔ [ Embed Query ] ➔ [ Similarity Search in Vector DB ] ➔ [ Top Chunks ] ───────┘
+                                                                             │
+                                                                             ▼
+                                                  [ LLM + Context Prompt ] ➔ [ Grounded Answer ]
+
 
 ## 🛠️ Tech Stack
 
@@ -23,16 +35,26 @@ An interactive, GenAI-powered Retrieval-Augmented Generation (RAG) application t
 ## 📁 Project Structure
 
 ```text
+
 AI Document Assistant/
-├── backend/                  # Python API server and RAG logic
-│   ├── .env                  # API keys and configuration (Ignored by Git)
-│   ├── main.py               # Flask/FastAPI application entrypoint
-│   └── requirements.txt      # Python dependencies
-├── frontend/                 # React user interface
-│   ├── src/                  # React components and styling
-│   └── package.json          # Node dependencies
-├── .gitignore                # Git ignore rules
-└── README.md                 # Project documentation
+├── backend/                  
+│   ├── .env                  # Environment variables and API keys (Ignored by Git)
+│   ├── config.py             # Configuration settings and environment loading
+│   ├── main.py               # Flask/FastAPI application setup & routes
+│   ├── requirements.txt      # Python dependencies
+│   ├── run.py                # Backend server entrypoint execution script
+│   └── services.py           # Core RAG logic (embeddings, vector store, Mistral integration)
+├── frontend/                 # React frontend client 
+│   ├── node_modules/         # Installed Node package dependencies (Ignored by Git)
+│   ├── public/               # Static assets (favicons, icons)
+│   ├── src/                  # React components, styles, and application UI
+│   ├── .oxlintrc.json        # Oxlint configuration
+│   ├── index.html            # Main HTML entry file
+│   ├── package-lock.json     # Locked dependency versions
+│   ├── package.json          # Frontend scripts and project metadata
+│   └── vite.config.js        # Vite bundler configuration
+├── .gitignore                # Global Git ignore rules
+└── README.md                 # Main project documentation
 ```
 
 ## ⚙️ Installation & Setup
@@ -49,25 +71,25 @@ AI Document Assistant/
 
   2. Create and activate a virtual environment:
 
-        * **Create virtual environment**
+     # Create virtual environment
         python -m venv venv
         
-        * **Activate on Windows (Command Prompt):**
+      # Activate on Windows (Command Prompt):
         venv\Scripts\activate
         
-        * **Activate on Windows (PowerShell):**
+      # Activate on Windows (PowerShell):
         .\venv\Scripts\Activate.ps1
         
-        * **Activate on macOS/Linux:**
+      # Activate on macOS/Linux:
         source venv/bin/activate
 
-3. Install required Python packages:
+4. Install required Python packages:
        pip install -r requirements.txt
 
-4. Create a .env file in the backend folder and add your key:
+5. Create a .env file in the backend folder and add your key:
       MISTRAL_API_KEY=your_actual_mistral_api_key_here
 
-5. Start the Backend Server:
+6. Start the Backend Server:
       cd backend
       python run.py runserver
 
