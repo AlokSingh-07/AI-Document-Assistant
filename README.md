@@ -22,7 +22,8 @@ An interactive, GenAI-powered Retrieval-Augmented Generation (RAG) application t
 
 ## 📁 Project Structure
 
- AI Document Assistant
+```text
+RAG/
 ├── backend/                  # Python API server and RAG logic
 │   ├── .env                  # API keys and configuration (Ignored by Git)
 │   ├── main.py               # Flask/FastAPI application entrypoint
@@ -32,3 +33,4 @@ An interactive, GenAI-powered Retrieval-Augmented Generation (RAG) application t
 │   └── package.json          # Node dependencies
 ├── .gitignore                # Git ignore rules
 └── README.md                 # Project documentation
+```
