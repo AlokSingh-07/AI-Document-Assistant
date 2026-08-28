@@ -98,11 +98,12 @@ AI Document Assistant/
 1. Open a new terminal tab and navigate to the frontend directory:
    ```bash
    cd frontend
-              
- 2. Install Node modules:
- ```bash
+
+2. Install Node modules:
    npm install
-              
+
 3. Start the Frontend Development Server:
-   ```bash
    npm run dev
+              
+ 
+              
