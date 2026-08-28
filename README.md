@@ -38,8 +38,8 @@ RAG/
 ## ⚙️ Installation & Setup
 
 ### 1. Prerequisites
-* **Python**: v3.10 or higher
-* **Node.js**: v18 or higher
+* **Python**: v3.14.3 or higher
+* **Node.js**: v24.15.0 or higher
 * **Mistral API Key**: Get one from [Mistral AI Platform](https://console.mistral.ai/)
 
 ### 2. Backend Setup
