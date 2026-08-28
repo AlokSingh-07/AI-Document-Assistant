@@ -97,12 +97,12 @@ AI Document Assistant/
 
 ### 3. Frontend Setup
 
- 1. Open a new terminal tab and navigate to the frontend directory:
-       cd frontend
+# Open a new terminal tab and navigate to the frontend directory:
+  cd frontend
               
- 2. Install Node modules:
-        npm install
+ # Install Node modules:
+  pm install
               
-3. Start the Frontend Development Server:
-      cd frontend
-      npm run dev
+# Start the Frontend Development Server:
+  cd frontend
+  npm run dev
