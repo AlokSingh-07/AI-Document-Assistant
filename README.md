@@ -68,7 +68,6 @@ AI Document Assistant/
 ## 1. Open terminal and navigate to the backend directory:
     cd backend
  ## 2. Create and activate a virtual environment:
-    python -m venv venv
 
   ### Create virtual environment
     python -m venv venv
