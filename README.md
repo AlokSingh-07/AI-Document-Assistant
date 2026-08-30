@@ -15,6 +15,7 @@ An interactive, GenAI-powered Retrieval-Augmented Generation (RAG) application t
 
 ### Workflow Diagram
 
+```text
 [ Upload PDF ] ➔ [ Text Extraction ] ➔ [ Chunking ] ➔ [ Generate Vector Embeddings ] ➔ [ Store in Vector DB ]
                                                                                                │
 [ User Query ] ➔ [ Embed Query ] ➔ [ Similarity Search in Vector DB ] ➔ [ Top Chunks ] ───────┘
@@ -22,7 +23,7 @@ An interactive, GenAI-powered Retrieval-Augmented Generation (RAG) application t
                                                                              ▼
                                                   [ LLM + Context Prompt ] ➔ [ Grounded Answer ]
 
-
+```
 ## 🛠️ Tech Stack
 
 * **Frontend**: React.js, JavaScript, CSS3
