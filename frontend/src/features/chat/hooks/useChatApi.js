@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // src/features/chat/hooks/useChatApi.js
 import { useState } from "react";
 
@@ -22,7 +16,7 @@ export function useChatApi() {
   const [uploadStatus, setUploadStatus] = useState("");
 
   const handleFileSelect = (event) => {
-    const selectedFile = event.target.files?.[0]; // यहाँ .[0] सही किया गया है
+    const selectedFile = event.target.files?.[0];
     if (!selectedFile) return;
 
     if (!selectedFile.name.toLowerCase().endsWith(".pdf")) {
